@@ -16,27 +16,10 @@
 
 nlp-bazel-tutorial is a project encompassing NLP model training and C++-based engineering practices for inference, covering the following components:
 
-- **Model Training:
-
--- **Named Entity Recognition (NER):
-
----- **SpanBERT
-
----- **MRC-BERT
-
----- **T5
-
----- **Qwen
-
--- **Text Error Correction:
-
----- **MacBERT
-
----- **T5
-
----- **Qwen
-
-Text Classification
+- **Model Training: 
+    Named Entity Recognition (NER): SpanBERT、MRC-BERT、T5、LLM
+    Text Error Correction: MacBERT、T5、LLM
+    Text Classification: BERT Family of Models、LLM
 
 - **C++-Based Engineering Practices:
 
@@ -51,7 +34,6 @@ Unified inference capabilities supporting:
 ONNX-compatible models
 
 llama.cpp-enabled LLMs
-
 
 ## 一、 Structures
 - base
