@@ -17,12 +17,18 @@
 nlp-bazel-tutorial is a project encompassing NLP model training and C++-based engineering practices for inference, covering the following components:
 
 - **Model Training: 
+    
     Named Entity Recognition (NER): SpanBERT、MRC-BERT、T5、LLM
+    
     Text Error Correction: MacBERT、T5、LLM
+    
     Text Classification: BERT Family of Models、LLM
 
 - **C++-Based Engineering Practices:
-    Build system managed with Bazel for cross-platform compilation CPU-optimized inference for traditional     models and large language models (LLMs) using: ONNX llama.cpp for model deployment Unified     inference capabilities supporting: ONNX-compatible models llama.cpp-enabled LLMs
+    
+    Build system managed with Bazel for cross-platform compilation CPU-optimized inference for traditional  models and large language models (LLMs) 
+
+    Using ONNX llama.cpp for model deployment Unified inference capabilities supporting: ONNX-compatible models llama.cpp-enabled LLMs
 
 ## 一、 Structures
 - base
