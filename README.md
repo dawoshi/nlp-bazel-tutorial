@@ -7,7 +7,51 @@
   <img width="100" src = "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 </p>
 
-nlp-tutorial is a tutorial for who is studying NLP(Natural Language Processing)，This project uses Pytorch training and deploying with C++.
+## News
+
+- [2024/3] 🔥 nlp-bazel-tutorial provides support for T5 and large language models (LLMs) across both training and inference workflows
+- [2024/12] 🔥 Building Model Training Code and Bazel-Based base/thirdparty Modules with ONNX for NLP Model Inference。
+
+## About
+
+nlp-bazel-tutorial is a project encompassing NLP model training and C++-based engineering practices for inference, covering the following components:
+
+- **Model Training:
+
+-- **Named Entity Recognition (NER):
+
+---- **SpanBERT
+
+---- **MRC-BERT
+
+---- **T5
+
+---- **Qwen
+
+-- **Text Error Correction:
+
+---- **MacBERT
+
+---- **T5
+
+---- **Qwen
+
+Text Classification
+
+- **C++-Based Engineering Practices:
+
+Build system managed with Bazel for cross-platform compilation
+
+CPU-optimized inference for traditional models and large language models (LLMs) using:
+
+ONNX llama.cpp for model deployment
+
+Unified inference capabilities supporting:
+
+ONNX-compatible models
+
+llama.cpp-enabled LLMs
+
 
 ## 一、 Structures
 - base
@@ -17,32 +61,37 @@ nlp-tutorial is a tutorial for who is studying NLP(Natural Language Processing)�
 - data
 
 ```text
- ├── base
- ├── build
- ├── data
- │   ├── name_entity_recognition
- │   │   ├── mrc-ner
- │   │   └── span-ner
- │   └── text_classification
- ├── name_entity_recognition
- │   ├── chatgpt2-ner
- │   ├── mrc-ner
- │   │   ├── mrc-for-flat-nested-ner
- │   │   └── onnx-cpp
- │   │       └── model
- │   └── span-ner
- │       ├── onnx-cpp
- │       │   └── model
- │       └── span-bert-ner-pytorch
- ├── testing
- ├── text_classification
- │   ├── bert-finetune
- │   └── onnx-cpp
- │       └── model
- └── third_party
+.
+├── base
+├── chinese_error_correction
+│   ├── macbert2csc
+│   │   ├── macbert2onnx
+│   │   └── onnx-cpp
+│   │       └── model
+│   ├── pycorrector
+│   ├── qwen2csc
+│   └── t52csc
+│       ├── onnx-cpp
+│       │   └── model
+│       └── t52onnx
+├── name_entity_recognition
+│   ├── chatgpt2-ner
+│   ├── mrc-ner
+│   │   ├── mrc-for-flat-nested-ner
+│   │   └── onnx-cpp
+│   │       └── model
+│   └── span-ner
+│       ├── onnx-cpp
+│       │   └── model
+│       └── span-bert-ner-pytorch
+├── text_classification
+│   ├── bert-finetune
+│   └── onnx-cpp
+└── third_party
+
 ```
 
-### base
+### 一、base
 Base is pulled into many projects. For example, various ChromeOS daemons. So
 the bar for adding stuff is that it must have demonstrated wide
 applicability. Prefer to add things closer to where they're used (i.e. "not
@@ -77,9 +126,10 @@ The overall performance of BERT on **dev**:
 | -------- | ---------- | ------ | --------- |
 | BERT+MRC | 0.9243     | 0.9113 | 0.9177    |
 
+### 三、text error correction
+The text correction module includes text error correction based on the MacBERT pre-trained model, T5 model-based approach, and large language models (LLMs). On a CPU, the T5 model achieves title-level inference speeds of 100ms. Additionally, it integrates llama.cpp to support LLM inference.
 
-
-### 三、 Text Classification
+### 四、 Text Classification
 
 Using the pre trained models for text classification。
 
