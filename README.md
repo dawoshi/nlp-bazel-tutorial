@@ -23,17 +23,7 @@ nlp-bazel-tutorial is a project encompassing NLP model training and C++-based en
 
 - **C++-Based Engineering Practices:
 
-Build system managed with Bazel for cross-platform compilation
-
-CPU-optimized inference for traditional models and large language models (LLMs) using:
-
-ONNX llama.cpp for model deployment
-
-Unified inference capabilities supporting:
-
-ONNX-compatible models
-
-llama.cpp-enabled LLMs
+Build system managed with Bazel for cross-platform compilation CPU-optimized inference for traditional models and large language models (LLMs) using: ONNX llama.cpp for model deployment Unified inference capabilities supporting: ONNX-compatible models llama.cpp-enabled LLMs
 
 ## 一、 Structures
 - base
