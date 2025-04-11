@@ -33,11 +33,6 @@ nlp-bazel-tutorial is a project encompassing NLP model training and C++-based en
     Unified inference capabilities supporting: ONNX-compatible models llama.cpp-enabled LLMs
 
 ## 一、 Structures
-- base
-- third party
-- name entity recognition
-- text classification
-- data
 
 ```text
 .
