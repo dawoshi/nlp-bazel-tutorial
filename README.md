@@ -10,7 +10,7 @@
 ## News
 
 - [2024/3] 🔥 nlp-bazel-tutorial provides support for T5 and large language models (LLMs) across both training and inference workflows
-- [2024/12] 🔥 Building Model Training Code and Bazel-Based base/thirdparty Modules with ONNX for NLP Model Inference。
+- [2023/12] 🔥 Building Model Training Code and Bazel-Based base/thirdparty Modules with ONNX for NLP Model Inference。
 
 ## About
 
